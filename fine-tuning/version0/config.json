@@ -1,0 +1,51 @@
+{
+    "data": {
+        "data_shape": [
+            4797,
+            32
+        ],
+        "encoding_info": null,
+        "has_validation": true,
+        "num_bins": 50,
+        "validation_shape": [
+            1200,
+            32
+        ]
+    },
+    "fine-tuning": {
+        "model": {
+            "head": {
+                "activation": "ReLU",
+                "batch_norm": false,
+                "dropouts": 0.1,
+                "hidden_layers": [
+                    1024
+                ],
+                "output_dim": 2
+            }
+        },
+        "optimizer": {
+            "betas": [
+                0.9,
+                0.999
+            ],
+            "lr": 0.0001,
+            "type": "AdamW",
+            "weight_decay": 1e-05
+        },
+        "training": {
+            "batch_size": 256,
+            "criterion": "CrossEntropyLoss()",
+            "epochs": 1000,
+            "num_classes": 2,
+            "num_workers": 0,
+            "penalty": "L2",
+            "regularization_lambda": 0.5,
+            "task_type": "classification"
+        }
+    },
+    "project": "hitcall data fine-tuning",
+    "system": {
+        "device": "cuda:0"
+    }
+}

@@ -1,0 +1,2 @@
+ckpt,data,num_bins,split_random_state,device,n_train,n_test,roc_auc,pr_auc,f1@0.5
+/home/labhosik4609/DG/tabularbert/fine-tuning/version0/model_checkpoint.pt,/home/labhosik4609/DG/tabularbert/datasets/hitcall.csv,50,0,cuda:0,5997,1500,0.9464521448874336,0.8805185471581274,0.8148148148148148
