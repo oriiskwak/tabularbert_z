@@ -1,8 +1,0 @@
-tb_posthoc_logs/
-build/
-*.egg-info/
-*.pyc
-*.pyo
-*.pyd
-*.pt
-*.pth
